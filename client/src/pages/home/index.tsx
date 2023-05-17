@@ -1,13 +1,20 @@
 import React from "react";
-import { HomeContainer } from './styles';
+import { HomeContainer, CardContainer } from './styles';
 import { LogoCITi } from '../../assets';
-
+import { Card } from '../../components';
 
 export const Home: React.FC = () => {
     return (
         <HomeContainer>
-            <img src={LogoCITi} alt="" />
-            <h1>ReactJS Boilerplate</h1>
+            {/* <img src={LogoCITi} alt="" /> */}
+            <CardContainer>
+                <Card 
+                    title="Titulo" 
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in odio sed felis dictum pharetra." 
+                    color="#830672"
+                />
+            </CardContainer>
+            <h1>Components + Props</h1>
             <p>
                 Made with
                 {' '}
@@ -17,7 +24,7 @@ export const Home: React.FC = () => {
                 {' '}
                 <strong>&hearts;</strong>
                 {' '}
-                by CITi
+                by Mari & Lili
             </p>
         </HomeContainer>
     );

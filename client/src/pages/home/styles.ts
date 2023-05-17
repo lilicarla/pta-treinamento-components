@@ -37,3 +37,7 @@ export const HomeContainer = styled.div`
     width: 25%;
   }
 `;
+
+export const CardContainer = styled.div`
+  display: flex;
+`;
