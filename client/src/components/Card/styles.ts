@@ -13,6 +13,7 @@ export const Container = styled.div<ContainerProps>`
 	background-color: ${(props)=> props.color};
   margin: 20px;
   border-radius: 5%;
+  padding: 20px;
 `
 
 export const CardTitle = styled.h1`
@@ -20,7 +21,7 @@ export const CardTitle = styled.h1`
   font-weight: 700;
   line-height: 28px;
   text-align: center;
-	margin-bottom:50px;
+  margin-bottom: 20px;
 `;
 
 export const CardText = styled.p`
