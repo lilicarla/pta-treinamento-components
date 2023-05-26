@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 interface ContainerProps{
 	color: string;
+  selected: boolean;
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -11,6 +12,8 @@ export const Container = styled.div<ContainerProps>`
   flex-direction: column;
   justify-content: center;
 	background-color: ${(props)=> props.color};
+  box-shadow: ${(props)=> props.selected ? "0px 0px 10px 0px rgba(0,0,0,0.75)" : "none"};
+  border: ${(props)=> props.selected ? "1px solid white" : "none"};
   margin: 20px;
   border-radius: 5%;
   padding: 20px;
